@@ -23,7 +23,6 @@ const TextInPut = ({ extractKeywords }) => {
       <Textarea
         bg="blue.400"
         color="white"
-        padding={4}
         marginTop={6}
         height={200}
         value={text}
