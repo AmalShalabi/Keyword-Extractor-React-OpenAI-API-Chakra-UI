@@ -1,4 +1,4 @@
-# Keyword Extractor React OpenAI API Chakra UI
+# Keyword Extractor React OpenAI API Chakra UI <a href="https://amalshalabi.github.io/Keyword-Extractor-React-OpenAI-API-Chakra-UI/" target="_blank">Demo</a>  
 
 This is a web application built with React, Chakra UI, and OpenAI API that extracts keywords from a text input.
 
