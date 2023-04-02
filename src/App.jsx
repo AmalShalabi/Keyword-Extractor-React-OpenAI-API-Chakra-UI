@@ -3,11 +3,12 @@ import { Container, Box } from "@chakra-ui/react";
 import Header from "./components/Header";
 import TextInPut from "./components/TextInPut";
 import Footer from "./components/footer";
+import KeywordsModal from "./components/KeywordsModal";
 
 const App = () => {
   const [keywords, setKeywords] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const extractKeywords = async (text) => {
     setLoading(true);
@@ -38,13 +39,18 @@ const App = () => {
     setKeywords(data);
     setLoading(false)
   };
+
+  const closeModal=()=>{
+    setIsOpen(false)
+  }
   return (
-    <Box bg="blue.800" color="white" height="100vh" paddingTop={8}>
+    <Box bg="blue.800" color="white" height="100vh" paddingTop={4}>
       <Container maxW="3xl" centerContent>
         <Header />
         <TextInPut extractKeywords={extractKeywords} />
         <Footer />
       </Container>
+      <KeywordsModal keywords={keywords} loading={loading} isOpen={isOpen} closeModal={closeModal}/>
     </Box>
   );
 };
