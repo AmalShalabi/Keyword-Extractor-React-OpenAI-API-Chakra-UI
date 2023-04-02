@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Box } from "@chakra-ui/react";
 import Header from "./components/Header";
 import TextInPut from "./components/TextInPut";
-import Footer from "./components/footer";
 import KeywordsModal from "./components/KeywordsModal";
 
 const App = () => {
@@ -48,7 +47,6 @@ const App = () => {
       <Container maxW="3xl" centerContent>
         <Header />
         <TextInPut extractKeywords={extractKeywords} />
-        <Footer />
       </Container>
       <KeywordsModal keywords={keywords} loading={loading} isOpen={isOpen} closeModal={closeModal}/>
     </Box>
