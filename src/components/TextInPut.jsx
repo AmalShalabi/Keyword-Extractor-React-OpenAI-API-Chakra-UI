@@ -31,7 +31,7 @@ const TextInPut = ({ extractKeywords }) => {
       <Button
         bg="blue.500"
         color="white"
-        marginTop={4}
+        margin={4}
         width="100%"
         _hover={{ bg: "blue.700" }}
         onClick={submitText}
